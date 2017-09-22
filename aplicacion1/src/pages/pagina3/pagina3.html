@@ -4,30 +4,194 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
+
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>pagina3</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-<ion-content padding>
-  <ion-list>
+  
+    <ion-navbar>
+      <ion-title>pagina2</ion-title>
+  
+    </ion-navbar>
+  
+  </ion-header>
+  
+  <ion-header>
+      <ion-navbar>
+          
+        <ion-title>Motocicletas </ion-title>
+      </ion-navbar>
+    </ion-header>
     
-              <ion-item>
-                <ion-label fixed>Username</ion-label>
-                <ion-input type="text" value=""></ion-input>
-              </ion-item>
-            
-              <ion-item>
-                <ion-label fixed>Password</ion-label>
-                <ion-input type="password"></ion-input>
-              </ion-item>
-            
-              <button ion-button full (click)=" login()"> Ingresar</button>
     
-            </ion-list>
-            
+    <ion-content class="cards-bg">
+        <ion-searchbar #q
+        [showCancelButton]="true"
+        (keyup.enter)="search(q.value)">
+      </ion-searchbar>
+    
+      <ion-card>
+    
+        <img src="assets/img/bmw.jpg"/>
+    
+        <ion-card-content>
+          <ion-card-title>
+           BMW HP4 Race
+          </ion-card-title>
+          <p>
+            Precio: 15.000 $<br/>
+            Año: 2014 <br/>
+            Cilindrada: 999cc<br/>
+            color: blanco <br/>
+            Modelo: HP4<br/>
+            Combustible: Gasolina<br/>
+  
+          </p>
+        </ion-card-content>
+    
+        <ion-row no-padding>
+          <ion-col>
+            <button ion-button clear small color="danger" icon-start>
+              <ion-icon name='star'></ion-icon>
+              Favorite
+            </button>
+          </ion-col>
+          <ion-col text-center>
+            <button ion-button clear small color="danger" icon-start>
+              <ion-icon name='musical-notes'></ion-icon>
+              Listen
+            </button>
+          </ion-col>
+          <ion-col text-right>
+            <button ion-button clear small color="danger" icon-start>
+              <ion-icon name='share-alt'></ion-icon>
+              Share
+            </button>
+          </ion-col>
+        </ion-row>
+    
+      </ion-card>
 
-</ion-content>
+      <ion-card>
+        
+            <img src="assets/img/hondam.jpg"/>
+        
+            <ion-card-content>
+              <ion-card-title>
+                HONDA 
+              </ion-card-title>
+              <p>
+                Precio: 18.000 $<br/>
+                Año: 2014 <br/>
+                Cilindrada: 999cc<br/>
+                color: Rojo <br/>
+                Modelo:  HONDA CBR 1000 RR Fireblade<br/>
+                Combustible: Gasolina<br/>
+      
+              </p>
+            </ion-card-content>
+        
+            <ion-row no-padding>
+              <ion-col>
+                <button ion-button clear small color="danger" icon-start>
+                  <ion-icon name='star'></ion-icon>
+                  Favorite
+                </button>
+              </ion-col>
+              <ion-col text-center>
+                <button ion-button clear small color="danger" icon-start>
+                  <ion-icon name='musical-notes'></ion-icon>
+                  Listen
+                </button>
+              </ion-col>
+              <ion-col text-right>
+                <button ion-button clear small color="danger" icon-start>
+                  <ion-icon name='share-alt'></ion-icon>
+                  Share
+                </button>
+              </ion-col>
+            </ion-row>
+        
+          </ion-card>
+
+           <ion-card>
+        
+            <img src="assets/img/hondam.jpg"/>
+        
+            <ion-card-content>
+              <ion-card-title>
+                HONDA 
+              </ion-card-title>
+              <p>
+                Precio: 18.000 $<br/>
+                Año: 2014 <br/>
+                Cilindrada: 999cc<br/>
+                color: Rojo <br/>
+                Modelo:  HONDA CBR 1000 RR Fireblade<br/>
+                Combustible: Gasolina<br/>
+      
+              </p>
+            </ion-card-content>
+        
+            <ion-row no-padding>
+              <ion-col>
+                <button ion-button clear small color="danger" icon-start>
+                  <ion-icon name='star'></ion-icon>
+                  Favorite
+                </button>
+              </ion-col>
+              <ion-col text-center>
+                <button ion-button clear small color="danger" icon-start>
+                  <ion-icon name='musical-notes'></ion-icon>
+                  Listen
+                </button>
+              </ion-col>
+              <ion-col text-right>
+                <button ion-button clear small color="danger" icon-start>
+                  <ion-icon name='share-alt'></ion-icon>
+                  Share
+                </button>
+              </ion-col>
+            </ion-row>
+        
+          </ion-card>
+
+          <ion-card>
+            
+                <img src="assets/img/kawasaki.jpg"/>
+            
+                <ion-card-content>
+                  <ion-card-title>
+                    KAWASAKI
+                  </ion-card-title>
+                  <p>
+                    Precio: 5.000 $<br/>
+                    Año: 2014 <br/>
+                    Cilindrada: 300cc<br/>
+                    color: Rojo <br/>
+                    Modelo: NINJA 300 ABS<br/>
+                    Combustible: Gasolina<br/>
+          
+                  </p>
+                </ion-card-content>
+            
+                <ion-row no-padding>
+                  <ion-col>
+                    <button ion-button clear small color="danger" icon-start>
+                      <ion-icon name='star'></ion-icon>
+                      Favorite
+                    </button>
+                  </ion-col>
+                  <ion-col text-center>
+                    <button ion-button clear small color="danger" icon-start>
+                      <ion-icon name='musical-notes'></ion-icon>
+                      Listen
+                    </button>
+                  </ion-col>
+                  <ion-col text-right>
+                    <button ion-button clear small color="danger" icon-start>
+                      <ion-icon name='share-alt'></ion-icon>
+                      Share
+                    </button>
+                  </ion-col>
+                </ion-row>
+            
+              </ion-card>
