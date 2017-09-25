@@ -16,7 +16,7 @@
 <ion-header>
     <ion-navbar>
         
-      <ion-title>Catalogo </ion-title>
+      <ion-title>Autos</ion-title>
     </ion-navbar>
   </ion-header>
   
@@ -27,21 +27,21 @@
       (keyup.enter)="search(q.value)">
     </ion-searchbar>
   
-    <ion-card>
+    <ion-card *ngFor="let item of autos">
   
-      <img src="assets/img/yaris 7.jpg"/>
+      <img [src]="item.Imagen"/>
   
       <ion-card-content>
         <ion-card-title>
-         Toyota Yaris
+         {{item.titulo}}
         </ion-card-title>
         <p>
-          Precio: 15.000 $<br/>
-          Año: 2014 <br/>
-          Transmision: Mecanica<br/>
-          color: blanco <br/>
-          Traccion: 4x2<br/>
-          Combustible: Gasolina<br/>
+          Precio: {{item.Precio}}<br/>
+          Año: {{item.Anio}}  <br/>
+          Transmision: {{item.Transmision}}<br/>
+          color: {{item.color}} <br/>
+          Traccion: {{item.Traccion}}<br/>
+          Combustible: {{item.Combustible}}<br/>
 
         </p>
       </ion-card-content>
@@ -68,217 +68,5 @@
       </ion-row>
   
     </ion-card>
-  
-    <ion-card>
-  
-      <div>
-        <img src="assets/img/suzuki.jpg"/>
-      </div>
-  
-      <ion-card-content>
-        <ion-card-title>
-          Suzuki  Alto K10
-        </ion-card-title>
-        <p>
-            Precio: 12.000 $<br/>
-            Año: 2013 <br/>
-            Transmision: Mecanica<br/>
-            color: Guindo <br/>
-            Traccion: 4x2<br/>
-            Combustible: Gasolina<br/>
-        </p>
-      </ion-card-content>
-  
-      <ion-row no-padding>
-        <ion-col>
-          <button ion-button clear small color="danger" icon-start>
-            <ion-icon name='star'></ion-icon>
-            Favorite
-          </button>
-        </ion-col>
-        <ion-col text-center>
-          <button ion-button clear small color="danger" icon-start>
-            <ion-icon name='musical-notes'></ion-icon>
-            Listen
-          </button>
-        </ion-col>
-        <ion-col text-right>
-          <button ion-button clear small color="danger" icon-start>
-            <ion-icon name='share-alt'></ion-icon>
-            Share
-          </button>
-        </ion-col>
-      </ion-row>
-  
-    </ion-card>
-  
-    <ion-card>
-  
-      <div>
-        <img src="assets/img/honda.jpg"/>
-      </div>
-  
-      <ion-card-content>
-        <ion-card-title>
-          Honda Accord Full
-        </ion-card-title>
-        <p>
-            Precio: 12.000 $<br/>
-            Año: 2010 <br/>
-            Transmision: Automatica<br/>
-            color: Plateado <br/>
-            Traccion: 4x2<br/>
-            Combustible: Gasolina<br/>
-        </p>
-      </ion-card-content>
-  
-      <ion-row no-padding>
-        <ion-col>
-          <button ion-button clear small color="danger" icon-start>
-            <ion-icon name='star'></ion-icon>
-            Favorite
-          </button>
-        </ion-col>
-        <ion-col text-center>
-          <button ion-button clear small color="danger" icon-start>
-            <ion-icon name='musical-notes'></ion-icon>
-            Listen
-          </button>
-        </ion-col>
-        <ion-col text-right>
-          <button ion-button clear small color="danger" icon-start>
-            <ion-icon name='share-alt'></ion-icon>
-            Share
-          </button>
-        </ion-col>
-      </ion-row>
-  
-    </ion-card>
-  
-    <ion-card>
-  
-      <div>
-        <img src="assets/img/fordfiesta.jpg"/>
-      </div>
-  
-      <ion-card-content>
-        <ion-card-title>
-          Ford Fiesta Titanium
-        </ion-card-title>
-        <p>
-            Precio: 10.000 $<br/>
-            Año: 2014 <br/>
-            Transmision: Mecanica <br/>
-            color: Rojo <br/>
-            Traccion: 4x2 <br/>
-            Combustible: Gasolina <br/>
-        </p>
-      </ion-card-content>
-  
-      <ion-row no-padding>
-        <ion-col>
-          <button ion-button clear small color="danger" icon-start>
-            <ion-icon name='star'></ion-icon>
-            Favorite
-          </button>
-        </ion-col>
-        <ion-col text-center>
-          <button ion-button clear small color="danger" icon-start>
-            <ion-icon name='musical-notes'></ion-icon>
-            Listen
-          </button>
-        </ion-col>
-        <ion-col text-right>
-          <button ion-button clear small color="danger" icon-start>
-            <ion-icon name='share-alt'></ion-icon>
-            Share
-          </button>
-        </ion-col>
-      </ion-row>
-  
-    </ion-card>
-  <ion-card>
-  
-      <img src="assets/img/chevrolet.jpg"/>
-  
-      <ion-card-content>
-        <ion-card-title>
-         Chevrolet Cruze
-        </ion-card-title>
-        <p>
-          Precio: 12.000 $<br/>
-          Año: 2012 <br/>
-          Transmision: Mecanica<br/>
-          color: Plomo <br/>
-          Traccion: 4x2<br/>
-          Combustible: Gasolina<br/>
-
-        </p>
-      </ion-card-content>
-  
-      <ion-row no-padding>
-        <ion-col>
-          <button ion-button clear small color="danger" icon-start>
-            <ion-icon name='star'></ion-icon>
-            Favorite
-          </button>
-        </ion-col>
-        <ion-col text-center>
-          <button ion-button clear small color="danger" icon-start>
-            <ion-icon name='musical-notes'></ion-icon>
-            Listen
-          </button>
-        </ion-col>
-        <ion-col text-right>
-          <button ion-button clear small color="danger" icon-start>
-            <ion-icon name='share-alt'></ion-icon>
-            Share
-          </button>
-        </ion-col>
-      </ion-row>
-  
-      </ion-card>
-    <ion-card>
-      
-          <img src="assets/img/nissan.jpg"/>
-      
-          <ion-card-content>
-            <ion-card-title>
-             Nissan Qashqai
-            </ion-card-title>
-            <p>
-              Precio: 15.000 $<br/>
-              Año: 2013 <br/>
-              Transmision: Mecanica<br/>
-              color: Rojo <br/>
-              Traccion: 4x2<br/>
-              Combustible: Gasolina<br/>
-    
-            </p>
-          </ion-card-content>
-      
-          <ion-row no-padding>
-            <ion-col>
-              <button ion-button clear small color="danger" icon-start>
-                <ion-icon name='star'></ion-icon>
-                Favorite
-              </button>
-            </ion-col>
-            <ion-col text-center>
-              <button ion-button clear small color="danger" icon-start>
-                <ion-icon name='musical-notes'></ion-icon>
-                Listen
-              </button>
-            </ion-col>
-            <ion-col text-right>
-              <button ion-button clear small color="danger" icon-start>
-                <ion-icon name='share-alt'></ion-icon>
-                Share
-              </button>
-            </ion-col>
-          </ion-row>
-      
-        </ion-card>
-  
   
   </ion-content>

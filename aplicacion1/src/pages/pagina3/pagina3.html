@@ -17,7 +17,7 @@
   <ion-header>
       <ion-navbar>
           
-        <ion-title>Motocicletas </ion-title>
+        <ion-title> Motocicletas </ion-title>
       </ion-navbar>
     </ion-header>
     
@@ -28,25 +28,24 @@
         (keyup.enter)="search(q.value)">
       </ion-searchbar>
     
-      <ion-card>
-    
-        <img src="assets/img/bmw.jpg"/>
-    
+      <ion-card *ngFor="let item of motos">
+
+        <img [src]="item.imagen"/>
         <ion-card-content>
           <ion-card-title>
-           BMW HP4 Race
+            {{item.titulo}}
           </ion-card-title>
           <p>
-            Precio: 15.000 $<br/>
-            Año: 2014 <br/>
-            Cilindrada: 999cc<br/>
-            color: blanco <br/>
-            Modelo: HP4<br/>
-            Combustible: Gasolina<br/>
+            
+            Precio: {{item.precio}}<br/>
+            Año: {{item.anio}} <br/>
+            Cilindrada: {{item.Cilindrada}}<br/>
+            color: {{item.color}} <br/>
+            Modelo: {{item.modelo}} <br/>
+            Combustible: {{item.Combustible}}<br/>
   
           </p>
         </ion-card-content>
-    
         <ion-row no-padding>
           <ion-col>
             <button ion-button clear small color="danger" icon-start>
@@ -69,129 +68,6 @@
         </ion-row>
     
       </ion-card>
+    </ion-content>
 
-      <ion-card>
-        
-            <img src="assets/img/hondam.jpg"/>
-        
-            <ion-card-content>
-              <ion-card-title>
-                HONDA 
-              </ion-card-title>
-              <p>
-                Precio: 18.000 $<br/>
-                Año: 2014 <br/>
-                Cilindrada: 999cc<br/>
-                color: Rojo <br/>
-                Modelo:  HONDA CBR 1000 RR Fireblade<br/>
-                Combustible: Gasolina<br/>
       
-              </p>
-            </ion-card-content>
-        
-            <ion-row no-padding>
-              <ion-col>
-                <button ion-button clear small color="danger" icon-start>
-                  <ion-icon name='star'></ion-icon>
-                  Favorite
-                </button>
-              </ion-col>
-              <ion-col text-center>
-                <button ion-button clear small color="danger" icon-start>
-                  <ion-icon name='musical-notes'></ion-icon>
-                  Listen
-                </button>
-              </ion-col>
-              <ion-col text-right>
-                <button ion-button clear small color="danger" icon-start>
-                  <ion-icon name='share-alt'></ion-icon>
-                  Share
-                </button>
-              </ion-col>
-            </ion-row>
-        
-          </ion-card>
-
-           <ion-card>
-        
-            <img src="assets/img/hondam.jpg"/>
-        
-            <ion-card-content>
-              <ion-card-title>
-                HONDA 
-              </ion-card-title>
-              <p>
-                Precio: 18.000 $<br/>
-                Año: 2014 <br/>
-                Cilindrada: 999cc<br/>
-                color: Rojo <br/>
-                Modelo:  HONDA CBR 1000 RR Fireblade<br/>
-                Combustible: Gasolina<br/>
-      
-              </p>
-            </ion-card-content>
-        
-            <ion-row no-padding>
-              <ion-col>
-                <button ion-button clear small color="danger" icon-start>
-                  <ion-icon name='star'></ion-icon>
-                  Favorite
-                </button>
-              </ion-col>
-              <ion-col text-center>
-                <button ion-button clear small color="danger" icon-start>
-                  <ion-icon name='musical-notes'></ion-icon>
-                  Listen
-                </button>
-              </ion-col>
-              <ion-col text-right>
-                <button ion-button clear small color="danger" icon-start>
-                  <ion-icon name='share-alt'></ion-icon>
-                  Share
-                </button>
-              </ion-col>
-            </ion-row>
-        
-          </ion-card>
-
-          <ion-card>
-            
-                <img src="assets/img/kawasaki.jpg"/>
-            
-                <ion-card-content>
-                  <ion-card-title>
-                    KAWASAKI
-                  </ion-card-title>
-                  <p>
-                    Precio: 5.000 $<br/>
-                    Año: 2014 <br/>
-                    Cilindrada: 300cc<br/>
-                    color: Rojo <br/>
-                    Modelo: NINJA 300 ABS<br/>
-                    Combustible: Gasolina<br/>
-          
-                  </p>
-                </ion-card-content>
-            
-                <ion-row no-padding>
-                  <ion-col>
-                    <button ion-button clear small color="danger" icon-start>
-                      <ion-icon name='star'></ion-icon>
-                      Favorite
-                    </button>
-                  </ion-col>
-                  <ion-col text-center>
-                    <button ion-button clear small color="danger" icon-start>
-                      <ion-icon name='musical-notes'></ion-icon>
-                      Listen
-                    </button>
-                  </ion-col>
-                  <ion-col text-right>
-                    <button ion-button clear small color="danger" icon-start>
-                      <ion-icon name='share-alt'></ion-icon>
-                      Share
-                    </button>
-                  </ion-col>
-                </ion-row>
-            
-              </ion-card>
