@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Pagina4Page}from '../pagina4/pagina4';
 
 /**
  * Generated class for the Pagina2Page page.
@@ -23,6 +24,7 @@ export class Pagina2Page {
     color: "blanco",
     Traccion: "4x2",
     Combustible: "Gasolina",
+    reservado: "jose"
   }
     autos: any[]=[
       {
@@ -83,10 +85,14 @@ export class Pagina2Page {
     ];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Pagina2Page');
+  reservar(){
+    
+    this.navCtrl.push(Pagina4Page);
+  
   }
+  
+  
 
 }

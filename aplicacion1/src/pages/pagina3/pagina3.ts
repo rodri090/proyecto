@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Pagina4Page}from '../pagina4/pagina4';
 
 /**
  * Generated class for the Pagina3Page page.
@@ -86,11 +87,12 @@ export class Pagina3Page {
   ];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.motos.push(this.moto);
+  
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Pagina3Page');
+  reservarMotos(){
+    
+    this.navCtrl.push(Pagina4Page);
   }
 
 }

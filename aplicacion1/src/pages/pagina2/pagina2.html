@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>pagina2</ion-title>
+    <ion-title>pagina2 </ion-title>
 
   </ion-navbar>
 
@@ -15,7 +15,7 @@
 
 <ion-header>
     <ion-navbar>
-        
+      
       <ion-title>Autos</ion-title>
     </ion-navbar>
   </ion-header>
@@ -48,21 +48,9 @@
   
       <ion-row no-padding>
         <ion-col>
-          <button ion-button clear small color="danger" icon-start>
-            <ion-icon name='star'></ion-icon>
-            Favorite
-          </button>
-        </ion-col>
-        <ion-col text-center>
-          <button ion-button clear small color="danger" icon-start>
-            <ion-icon name='musical-notes'></ion-icon>
-            Listen
-          </button>
-        </ion-col>
-        <ion-col text-right>
-          <button ion-button clear small color="danger" icon-start>
-            <ion-icon name='share-alt'></ion-icon>
-            Share
+          <button ion-button clear small color="danger" icon-start (click)="reservar()">
+            <ion-icon name='md-pricetags'></ion-icon>
+            Reservar
           </button>
         </ion-col>
       </ion-row>
