@@ -13,7 +13,8 @@ export class HomePage {
     
   }
 login(){
-  this.navCtrl.push(Pagina4Page);
+  
+//this.navCtrl.push(Pagina4Page);
   }
 }
 

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Pagina4Page}from '../pagina4/pagina4';
-
+import { AlertController } from 'ionic-angular';
 /**
  * Generated class for the Pagina3Page page.
  *
@@ -86,13 +86,22 @@ export class Pagina3Page {
   }
   ];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public alerta:AlertController) {
   
   }
-
+  alertaBasica(){
+    
+   let miAlerta= this.alerta.create({
+    title:'RESERVAR MOTOCICLETA',
+    message:'Registrese para hacer efectiva su reserva',
+    buttons:['Registrar']
+   });
+   
+   miAlerta.present()
+  }
   reservarMotos(){
     
-    this.navCtrl.push(Pagina4Page);
+  this.navCtrl.push(Pagina4Page);
   }
 
 }

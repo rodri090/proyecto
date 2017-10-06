@@ -10,7 +10,8 @@ import { Pagina2Page } from '../pages/pagina2/pagina2';
 import { Pagina3Page }from '../pages/pagina3/pagina3';
 import { Pagina4Page }from '../pages/pagina4/pagina4';
 import { TabsPage } from '../pages/tabs/tabs';
-
+//import { Storage } from '@ionic/storage';
+//import { DataTestProvider } from '../providers/data-test/data-test';
 @NgModule({
   declarations: [
     MyApp,
@@ -32,12 +33,14 @@ import { TabsPage } from '../pages/tabs/tabs';
     Pagina3Page,
     Pagina4Page,
     TabsPage
+    
   ],
 
   providers: [
+    
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    
   ]
 })
 export class AppModule {}

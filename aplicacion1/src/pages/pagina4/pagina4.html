@@ -16,30 +16,42 @@
 <ion-content padding>
       <ion-item>
         <ion-label fixed>Nombre</ion-label>
-        <ion-input type="text" value=""></ion-input>
+        <ion-input type="text"[(ngModel)]="nuevoRegistro.Nombre"></ion-input>
       </ion-item>
     
+
       <ion-item>
         <ion-label fixed>Apellidos</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input type="text"[(ngModel)]="nuevoRegistro.Apellidos"></ion-input>
 
       </ion-item>
 
       <ion-item>
           <ion-label fixed>Correo Electronico</ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-input type="text"[(ngModel)]="nuevoRegistro.CorreoElectronico"></ion-input>
         </ion-item>
 
         <ion-item>
             <ion-label fixed>Telefono</ion-label>
-            <ion-input type="int"></ion-input>
+            <ion-input type="int"[(ngModel)]="nuevoRegistro.Telefono"></ion-input>
           </ion-item>
 
           <ion-item>
               <ion-label fixed>Direccion</ion-label>
-              <ion-input type="text"></ion-input>
-          </ion-item>
+              <ion-input type="text"[(ngModel)]="nuevoRegistro.Direccion"></ion-input>
+         
+            </ion-item>
 
-            <button ion-button full>Registrar </button>
-            
+            <button ion-button full (click)="Registrar()">Registrar </button>
+           
+          
+            <ion-item *ngFor="let item of Registros">
+              Nomrbre: {{item.Nombre}}<br/>
+              Apellidos: {{item.Apellidos}} <br/>
+              CorreoElectronico: {{item.CorreoElectronico}}<br/>
+              Telefono: {{item.Telefono}} <br/>
+              Direccion: {{item.Direccion}} <br/>
+    
+             </ion-item>
+          
 </ion-content>

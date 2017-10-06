@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Pagina4Page}from '../pagina4/pagina4';
-
+import { AlertController } from 'ionic-angular';
 /**
  * Generated class for the Pagina2Page page.
  *
@@ -84,8 +84,18 @@ export class Pagina2Page {
     }
     ];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public alerta1:AlertController) {
     
+  }
+  alertaBasica(){
+    
+   let miAlerta= this.alerta1.create({
+    title:'RESERVAR AUTOMOVIL',
+    message:'Registrese para hacer efectiva su reserva',
+    buttons:['Registrar']
+   });
+   
+   miAlerta.present()
   }
   reservar(){
     
