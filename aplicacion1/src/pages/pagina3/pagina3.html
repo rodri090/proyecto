@@ -17,16 +17,13 @@
   <ion-header>
       <ion-navbar>
           
-        <ion-title> Motocicletas </ion-title>
+        <ion-title text-center > Motocicletas </ion-title>
       </ion-navbar>
     </ion-header>
     
     
     <ion-content class="cards-bg">
-        <ion-searchbar #q
-        [showCancelButton]="true"
-        (keyup.enter)="search(q.value)">
-      </ion-searchbar>
+
     
       <ion-card *ngFor="let item of motos">
 
